@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Color</title>
+
+    <link href="./style/reset.css" rel="stylesheet">
+    <link href="./style/main.css" rel="stylesheet">
+    
+</head>
+<body>
+    
+    <div class="block-container">
+        <div class="block">
+        </div>
+    </div>
+
+    <div class="range-container">
+        <form>
+            <div>
+                <input type="range" class="range range-red" id="range-red" min="0" max="255" step="1" value="30">
+                <input class="textInput textInput-red" id="textInput-red" disabled type="number" value="30">
+            </div>
+            <div>
+                <input type="range" class="range range-green" id="range-green" min="0" max="255" step="1" value="30">
+                <input class="textInput textInput-green" id="textInput-green" disabled type="number" value="30">
+            </div>
+            <div>
+                <input type="range" class="range range-blue" id="range-blue" min="0" max="255" step="1" value="30">
+                <input class="textInput textInput-blue" id="textInput-blue" disabled type="number" value="30">
+            </div>
+        </form>
+    </div>
+    <div class="result-container">
+        <textarea type="text" class="result" id="result" disabled rows="10"></textarea>
+    </div>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
